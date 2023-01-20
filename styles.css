@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+--Dark-gray: hsl(0, 0%, 59%);
+--Border-gray: hsla(0, 21%, 87%, 0.541);
+}
+
+img,picture,video,canvas,svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,button,textarea,select {
+  font: inherit;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+  overflow-wrap: break-word;
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--Dark-cyan);
+  background-image: url("./images/bg-pattern-top.svg"),
+                    url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 48vw bottom 50vh, left 48vw top 50vh;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr auto;
+  min-height: 100%;
+}
+
+.card {
+    background-color: white;
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-top {
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    width: 100%;
+    color: var(--Dark-grayish-blue);
+    padding-top: 3.5rem;
+    border-bottom: 1px solid var(--Border-gray);
+    position: relative;
+}
+
+.card-body > img {
+    position: absolute;
+    width: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    top: -50%;
+}
+
+.author {
+    display: flex; 
+    gap: .5rem;
+}
+
+.name {
+    color: var(--Very-dark-blue);
+    font-weight: 700;
+}
+
+.city {
+    font-size: .825rem;
+    padding-bottom: 1.5rem;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+}
+
+.amount {
+    font-weight: 700;
+}
+
+.info-amount {
+    color: var(--Dark-grayish-blue);
+    font-size: .6rem;
+    letter-spacing: 2px;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(25, 35, 179);
+}
+
