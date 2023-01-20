@@ -40,7 +40,7 @@ body {
   background-image: url("./images/bg-pattern-top.svg"),
                     url("./images/bg-pattern-bottom.svg");
   background-repeat: no-repeat;
-  background-position: right 48vw bottom 50vh, left 48vw top 50vh;
+  background-position: right 53vw bottom 50vh, left 53vw top 50vh;
   display: grid;
   place-items: center;
   grid-template-rows: 1fr auto;
